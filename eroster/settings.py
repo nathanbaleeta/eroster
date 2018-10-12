@@ -106,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 # Instructing Django to use our custom model instead the default one
-AUTH_USER_MODEL = 'eroster.User'
+#AUTH_USER_MODEL = 'eroster.User'
 
 
 # Internationalization
