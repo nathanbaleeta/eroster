@@ -1,0 +1,150 @@
+[
+  {
+	"model":"eroster.expertise",
+	"pk":1,
+	"fields":{
+	   "field":"Adolescent Development"
+	 
+ 	}
+  },
+  {
+	"model":"eroster.expertise",
+	"pk":2,
+	"fields":{
+	   "field":"Child Protection"
+	   
+	}
+  },
+  {
+	"model":"eroster.expertise",
+	"pk":3,
+	"fields":{
+	   "field":"C4D"
+	   
+	}
+  },
+  {
+	"model":"eroster.expertise",
+	"pk":4,
+	"fields":{
+	   "field":"Education "
+	   
+	}
+  },
+  {
+	"model":"eroster.expertise",
+	"pk":5,
+	"fields":{
+	   "field":"Gender Equality "
+	   
+	}
+  },
+  {
+	"model":"eroster.expertise",
+	"pk":6,
+	"fields":{
+	   "field":"Health"
+	}
+  },
+  {
+	"model":"eroster.expertise",
+	"pk":7,
+	"fields":{
+	   "field":"HIV and AIDS"
+	}
+  },
+   {
+	"model":"eroster.expertise",
+	"pk":8,
+	"fields":{
+	   "field":"Human Rights"
+	}
+  },
+     {
+	"model":"eroster.expertise",
+	"pk":9,
+	"fields":{
+	   "field":"Monitoring and Evaluation"
+	}
+  },
+     {
+	"model":"eroster.expertise",
+	"pk":10,
+	"fields":{
+	   "field":"Nutrition"
+	}
+  },
+       {
+	"model":"eroster.expertise",
+	"pk":11,
+	"fields":{
+	   "field":"Social and Economic Policy"
+	}
+  },
+      {
+	"model":"eroster.expertise",
+	"pk":12,
+	"fields":{
+	   "field":"Water Sanitation and Hygiene"
+	}
+  },
+     {
+	"model":"eroster.expertise",
+	"pk":13,
+	"fields":{
+	   "field":"Alliances and Resource Mobilization"
+	}
+  },
+    {
+	"model":"eroster.expertise",
+	"pk":14,
+	"fields":{
+	   "field":"Communications"
+	}
+  },
+    {
+	"model":"eroster.expertise",
+	"pk":15,
+	"fields":{
+	   "field":"Private Fundraising and Partnerships"
+	}
+  },
+    {
+	"model":"eroster.expertise",
+	"pk":16,
+	"fields":{
+	   "field":"Emergency Programme"
+	}
+  },
+    {
+	"model":"eroster.expertise",
+	"pk":17,
+	"fields":{
+	   "field":"Finance and Administration"
+	}
+  },
+    {
+	"model":"eroster.expertise",
+	"pk":18,
+	"fields":{
+	   "field":"Human Resources"
+	}
+  },
+      {
+	"model":"eroster.expertise",
+	"pk":19,
+	"fields":{
+	   "field":"ICT"
+	}
+  },
+      {
+	"model":"eroster.expertise",
+	"pk":20,
+	"fields":{
+	   "field":"Supply and Logistics"
+	}
+  }
+  
+
+]
+ 
