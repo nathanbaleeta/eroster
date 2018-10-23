@@ -7,6 +7,11 @@ from eroster.models.referee import Referee
 from eroster.models.expertise import Expertise
 from eroster.models.publication import Publication
 from eroster.models.consultant import Consultant
+from eroster.models.membership import Membership
+from eroster.models.education import Education
+from eroster.models.language import Language
+from eroster.models.clerical import Clerical
+from eroster.models.office_equipment import OfficeEquipment
 
 
 __all__ = [
@@ -19,5 +24,10 @@ __all__ = [
     'Expertise',
     'Publication',
     'Consultant',
+    'Membership',
+    'Education',
+    'Language',
+    'Clerical',
+    'OfficeEquipment',
     
 ]

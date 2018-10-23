@@ -13,7 +13,11 @@ from eroster.api.referee.referee_endpoint import refereeRouter
 from eroster.api.expertise.expertise_endpoint import expertiseRouter
 from eroster.api.publication.publication_endpoint import publicationRouter
 from eroster.api.consultant.consultant_endpoint import consultantRouter
-
+from eroster.api.membership.membership_endpoint import membershipRouter
+from eroster.api.education.education_endpoint import educationRouter
+from eroster.api.language.language_endpoint import languageRouter
+from eroster.api.clerical.clerical_endpoint import clericalRouter
+from eroster.api.office_equipment.office_equipment_endpoint import office_equipmentRouter
 
 
 urlpatterns = [
@@ -28,6 +32,11 @@ urlpatterns = [
     url(r'^api/', include(expertiseRouter.urls)),
     url(r'^api/', include(publicationRouter.urls)),
     url(r'^api/', include(consultantRouter.urls)),
+    url(r'^api/', include(membershipRouter.urls)),
+    url(r'^api/', include(educationRouter.urls)),
+    url(r'^api/', include(languageRouter.urls)),
+    url(r'^api/', include(clericalRouter.urls)),
+    url(r'^api/', include(office_equipmentRouter.urls)),
     
 
 

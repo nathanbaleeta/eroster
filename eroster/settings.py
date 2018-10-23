@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'phonenumber_field',
     'django_countries',
+    'languages',
     'eroster',
 ]
 
@@ -85,6 +86,9 @@ DATABASES = {
     }
 }
 
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.AllowAny',)
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
