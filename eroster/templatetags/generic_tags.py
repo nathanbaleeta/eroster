@@ -6,7 +6,6 @@ register = template.Library()
 def verbose_name(obj):
     return obj._meta.verbose_name
 
-
 @register.filter
 def verbose_name_plural(obj):
     return obj._meta.verbose_name_plural
