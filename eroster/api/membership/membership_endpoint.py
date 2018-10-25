@@ -17,4 +17,4 @@ class MembershipViewSet(ModelViewSet):
 
 
 membershipRouter = DefaultRouter()
-membershipRouter.register(r'membership', MembershipViewSet)
+membershipRouter.register(r'memberships', MembershipViewSet)

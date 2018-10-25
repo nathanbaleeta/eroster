@@ -17,4 +17,4 @@ class ContactViewSet(ModelViewSet):
 
 
 contactRouter = DefaultRouter()
-contactRouter.register(r'contact', ContactViewSet)
+contactRouter.register(r'contacts', ContactViewSet)

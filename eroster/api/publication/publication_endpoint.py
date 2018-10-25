@@ -17,4 +17,4 @@ class PublicationViewSet(ModelViewSet):
 
 
 publicationRouter = DefaultRouter()
-publicationRouter.register(r'publication', PublicationViewSet)
+publicationRouter.register(r'publications', PublicationViewSet)

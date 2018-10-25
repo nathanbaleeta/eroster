@@ -6,6 +6,10 @@ from django_countries.fields import CountryField
 class Agency(TimeStampedModel):
     name = models.CharField(max_length=50)
     country = CountryField(blank_label='(select country)')
+
+    class Meta:
+        verbose_name = "Agency"
+        verbose_name_plural = "Agencies"
   
     def __unicode__(self):
-        return self.name
+        return '%s %s' % (self.name, self.country)    

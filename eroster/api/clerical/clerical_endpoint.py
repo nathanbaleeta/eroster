@@ -19,4 +19,4 @@ class ClericalViewSet(ModelViewSet):
 
 
 clericalRouter = DefaultRouter()
-clericalRouter.register(r'clerical', ClericalViewSet)
+clericalRouter.register(r'clericals', ClericalViewSet)

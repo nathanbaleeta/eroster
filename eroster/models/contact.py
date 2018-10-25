@@ -13,6 +13,11 @@ class Contact(TimeStampedModel):
     office_tel = PhoneNumberField(default="")
     office_fax = models.CharField(max_length=20, null=True, blank=True)
     email = models.EmailField() 
+
+    class Meta:
+        verbose_name = "Contact"
+        verbose_name_plural = "Contacts"
+  
         
     def __unicode__(self):
         return self.email

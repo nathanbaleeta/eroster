@@ -19,4 +19,4 @@ class LanguageViewSet(ModelViewSet):
 
 
 languageRouter = DefaultRouter()
-languageRouter.register(r'language', LanguageViewSet)
+languageRouter.register(r'languages', LanguageViewSet)

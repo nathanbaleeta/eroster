@@ -11,6 +11,11 @@ class Publication(models.Model):
     date_published = models.DateField(blank=True, null=True)
     city_published = models.CharField(max_length=50, blank=True, null=True)
     country = CountryField(blank_label='(select country)')
+
+    class Meta:
+        verbose_name = "Publication"
+        verbose_name_plural = "Publications"
+  
     
     def __unicode__(self):
         return self.title

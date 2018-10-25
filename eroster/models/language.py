@@ -17,6 +17,11 @@ class Language(TimeStampedModel):
     understand_not_easily = models.BooleanField(blank=True)
     
     mother_tongue = models.BooleanField(blank=True)
+
+    class Meta:
+        verbose_name = "Language"
+        verbose_name_plural = "Languages"
+  
     
     def __unicode__(self):
         return self.language

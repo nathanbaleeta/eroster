@@ -15,4 +15,4 @@ class RelativeViewSet(ModelViewSet):
 
 
 relativeRouter = DefaultRouter()
-relativeRouter.register(r'relative', RelativeViewSet)
+relativeRouter.register(r'relatives', RelativeViewSet)

@@ -15,4 +15,4 @@ class DependentViewSet(ModelViewSet):
 
 
 dependentRouter = DefaultRouter()
-dependentRouter.register(r'dependent', DependentViewSet)
+dependentRouter.register(r'dependents', DependentViewSet)

@@ -15,4 +15,4 @@ class RefereeViewSet(ModelViewSet):
 
 
 refereeRouter = DefaultRouter()
-refereeRouter.register(r'referee', RefereeViewSet)
+refereeRouter.register(r'referees', RefereeViewSet)

@@ -20,6 +20,11 @@ class Employment(TimeStampedModel):
     ending_date = models.DateField(null=False)
     annual_salary_starting = models.DecimalField(max_digits=9, decimal_places=0)
     annual_salary_final = models.DecimalField(max_digits=9, decimal_places=0)
+
+    class Meta:
+        verbose_name = "Employment"
+        verbose_name_plural = "Employment"
+  
   
     def __unicode__(self):
         return self.employer

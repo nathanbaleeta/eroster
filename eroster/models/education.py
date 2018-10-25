@@ -28,6 +28,11 @@ class Education(TimeStampedModel):
     academic_distinction_obtained = models.CharField(max_length=100, blank=True)
     main_course_of_study = models.CharField(max_length=100, blank=True)
 
+    class Meta:
+        verbose_name = "Education"
+        verbose_name_plural = "Education"
+  
+
     def __unicode__(self):
         return self.institution
 

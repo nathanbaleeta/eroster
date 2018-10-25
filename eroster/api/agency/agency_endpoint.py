@@ -19,4 +19,4 @@ class AgencyViewSet(ModelViewSet):
 
 
 agencyRouter = DefaultRouter()
-agencyRouter.register(r'agency', AgencyViewSet)
+agencyRouter.register(r'agencies', AgencyViewSet)

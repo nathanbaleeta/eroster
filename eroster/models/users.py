@@ -48,8 +48,8 @@ class User(AbstractBaseUser):
 
 
     class Meta:
-        verbose_name = _('user')
-        verbose_name_plural = _('users')
+        verbose_name = _('User')
+        verbose_name_plural = _('Users')
 
     def get_full_name(self):
         '''

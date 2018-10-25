@@ -8,6 +8,11 @@ class Referee(TimeStampedModel):
     full_address = models.CharField(max_length=100)
     email = models.EmailField()
     business_or_occupation = models.CharField(max_length=45)
+
+    class Meta:
+        verbose_name = "Referee"
+        verbose_name_plural = "Referees"
+  
   
     def __unicode__(self):
         return self.full_name

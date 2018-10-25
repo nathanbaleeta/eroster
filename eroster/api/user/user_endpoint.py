@@ -18,5 +18,5 @@ class UserViewSet(ModelViewSet):
 
 
 userRouter = DefaultRouter()
-userRouter.register(r'user', UserViewSet)
+userRouter.register(r'users', UserViewSet)
 

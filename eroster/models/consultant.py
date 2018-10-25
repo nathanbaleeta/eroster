@@ -36,7 +36,11 @@ class Consultant(TimeStampedModel):
     present_nationality = CountryField(blank_label='(select country)')
     height = models.FloatField(null=True, blank=True)
     weight = models.FloatField(null=True, blank=True)
-    #prefered_field_of_work = models.CharField(max_length=50)
+    
+    class Meta:
+        verbose_name = "Consultant"
+        verbose_name_plural = "Consultants"
+  
     
     #def __unicode__(self):
     #    return self.family_name

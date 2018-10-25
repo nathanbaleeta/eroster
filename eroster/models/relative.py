@@ -8,5 +8,10 @@ class Relative(TimeStampedModel):
     relationship = models.CharField(max_length=50)
     international_organization = models.CharField(max_length=150)
 
+    class Meta:
+        verbose_name = "Relative"
+        verbose_name_plural = "Relatives"
+  
+
     def __unicode__(self):
         return self.name

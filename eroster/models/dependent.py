@@ -10,6 +10,10 @@ class Dependent(TimeStampedModel):
     name = models.CharField(max_length=50, blank=True, null=True)
     birthdate = models.DateField(blank=True, null=True)
     relationship = models.CharField(max_length=20, blank=True, null=True)
-    
+
+    class Meta:
+        verbose_name = "Dependent"
+        verbose_name_plural = "Dependents"
+
     def __unicode__(self):
-        return self.name
+        return '%s %s' % (self.name, self.relationship)    

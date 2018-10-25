@@ -17,4 +17,4 @@ class ConsultantViewSet(ModelViewSet):
 
 
 consultantRouter = DefaultRouter()
-consultantRouter.register(r'consultant', ConsultantViewSet)
+consultantRouter.register(r'consultants', ConsultantViewSet)
