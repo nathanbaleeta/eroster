@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'gmk55m2w!du=vb35f*v1#n8q0zz5x88_gzmuta^7vrlk8!az(#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost']
 
 
 
@@ -89,7 +89,6 @@ DATABASES = {
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.AllowAny',)
 }
-
 
 
 # Instructing Django to use our custom model instead the default one

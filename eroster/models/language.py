@@ -4,18 +4,18 @@ from languages.fields import LanguageField
 
 
 class Language(TimeStampedModel):
+    PROFICIENCY = (
+        ('NONE', 'None'),
+        ('BASIC', 'Basic'),
+        ('INTERMEDIATE', 'Intermediate'),
+        ('PROFICIENT', 'Proficient'),
+        ('FLUENT', 'Fluent'),
+    )
+    
     language = LanguageField(blank=True)
-    other = models.CharField(max_length=20, blank=True)
-    
-    read_easily = models.BooleanField(blank=True)
-    read_not_easily = models.BooleanField(blank=True)
-    write_easily = models.BooleanField(blank=True)
-    write_not_easily = models.BooleanField(blank=True)
-    speak_easily = models.BooleanField(blank=True)
-    speak_not_easily = models.BooleanField(blank=True)
-    understand_easily = models.BooleanField(blank=True)
-    understand_not_easily = models.BooleanField(blank=True)
-    
+    speaking_proficiency = models.CharField(max_length=13, choices=PROFICIENCY)
+    reading_proficiency = models.CharField(max_length=13, choices=PROFICIENCY)
+    writing_proficiency = models.CharField(max_length=13, choices=PROFICIENCY)
     mother_tongue = models.BooleanField(blank=True)
 
     class Meta:
