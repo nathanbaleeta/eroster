@@ -11,5 +11,6 @@ class Agency(TimeStampedModel):
         verbose_name = "Agency"
         verbose_name_plural = "Agencies"
   
-    def __unicode__(self):
-        return '%s %s' % (self.name, self.country)    
+    def __str__(self):
+        return self.name
+	
