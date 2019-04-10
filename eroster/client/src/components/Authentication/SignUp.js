@@ -10,6 +10,8 @@ import Button from "@material-ui/core/Button";
 
 import Avatar from "@material-ui/core/Avatar";
 
+import JoinHeader from "../Layout/JoinHeader";
+
 const styles = theme => ({
   paper: {
     padding: theme.spacing.unit * 2,
@@ -46,6 +48,7 @@ function Join(props) {
 
   return (
     <div>
+      <JoinHeader />
       <Grid container spacing={24} className={classes.gridContainer}>
         <Grid item xs={6} sm={1} />
         <Grid item xs={6} sm={6}>

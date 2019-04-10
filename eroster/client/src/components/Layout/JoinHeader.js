@@ -174,7 +174,7 @@ class Header extends React.Component {
             <div className={classes.sectionDesktop}>
               <div style={{ marginRight: "42px" }}>
                 <Grid container justify="center" alignItems="center">
-                  <Link to="/signin" className={classes.link}>
+                  <Link to="/" className={classes.link}>
                     <Tooltip title="Notifications">
                       <Button
                         variant="outlined"
@@ -186,7 +186,7 @@ class Header extends React.Component {
                     </Tooltip>
                   </Link>
                   &nbsp;&nbsp;
-                  <Link to="/join" className={classes.link}>
+                  <Link to="/signup" className={classes.link}>
                     <Tooltip title="Notifications">
                       <Button
                         variant="contained"

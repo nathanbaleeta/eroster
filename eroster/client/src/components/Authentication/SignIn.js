@@ -7,8 +7,12 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
+import { Link } from "react-router-dom";
+import Tooltip from "@material-ui/core/Tooltip";
 
 import Avatar from "@material-ui/core/Avatar";
+
+import JoinHeader from "../Layout/JoinHeader";
 
 const styles = theme => ({
   paper: {
@@ -46,6 +50,7 @@ function Join(props) {
 
   return (
     <div>
+      <JoinHeader />
       <Grid container spacing={24} className={classes.gridContainer}>
         <Grid item xs={6} sm={1} />
         <Grid item xs={6} sm={6}>
@@ -111,16 +116,22 @@ function Join(props) {
             </Grid>
             <br />
             <br />
-            <Button
-              variant="contained"
-              size="large"
-              color="primary"
-              fullWidth
-              className={classes.button}
-              style={{ marginTop: "5px" }}
-            >
-              Sign Up
-            </Button>
+
+            <Link to="/dashboard" className={classes.link}>
+              <Tooltip title="Profile">
+                <Button
+                  variant="contained"
+                  size="large"
+                  color="primary"
+                  fullWidth
+                  className={classes.button}
+                  style={{ marginTop: "5px" }}
+                >
+                  Sign In
+                </Button>
+              </Tooltip>
+            </Link>
+
             <br />
             <br />
             <br />

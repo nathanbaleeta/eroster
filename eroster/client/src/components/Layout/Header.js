@@ -14,8 +14,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import MailIcon from "@material-ui/icons/Mail";
 
-import PersonIcon from "@material-ui/icons/Person";
-import HomeIcon from "@material-ui/icons/Home";
+import AppsIcon from "@material-ui/icons/Apps";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import MoreIcon from "@material-ui/icons/MoreVert";
 import { Link } from "react-router-dom";
@@ -147,7 +146,7 @@ class Header extends React.Component {
       >
         <MenuItem onClick={this.handleMenuClose}>Profile</MenuItem>
         <MenuItem onClick={this.handleMenuClose}>Settings</MenuItem>
-        <Link to="/logout" className={classes.link}>
+        <Link to="/" className={classes.link}>
           <MenuItem onClick={this.handleMenuClose}>Logout</MenuItem>
         </Link>
         <Typography
@@ -195,14 +194,16 @@ class Header extends React.Component {
 
     return (
       <div className={classes.root}>
-        <AppBar position="fixed" style={{ background: "#000000" }}>
+        <AppBar
+          position="fixed"
+          style={{ backgroundImage: `url(${"/static/images/b.jpg"})` }}
+        >
           <Toolbar>
             <Typography
               className={classes.title}
-              variant="h6"
+              variant="h4"
               color="inherit"
               noWrap
-              style={{ fontWeight: "bold" }}
             >
               eRoster App
             </Typography>
@@ -228,18 +229,10 @@ class Header extends React.Component {
                     className={classes.avatar}
                   />
 
-                  <Link to="/myhome" className={classes.link}>
-                    <Tooltip title="Profile">
-                      <IconButton color="inherit">
-                        <PersonIcon />
-                      </IconButton>
-                    </Tooltip>
-                  </Link>
-
                   <Link to="/" className={classes.link}>
-                    <Tooltip title="Home">
+                    <Tooltip title="Apps">
                       <IconButton color="inherit">
-                        <HomeIcon />
+                        <AppsIcon />
                       </IconButton>
                     </Tooltip>
                   </Link>
