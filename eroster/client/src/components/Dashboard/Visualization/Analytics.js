@@ -35,6 +35,9 @@ function PersonalRatings(props) {
     <div className={classes.root}>
       <br />
       <br />
+      <br />
+      <br />
+      <br />
       <Typography variant="h4" gutterBottom align="center">
         Performance
       </Typography>

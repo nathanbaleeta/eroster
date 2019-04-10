@@ -15,6 +15,7 @@ import AccountCircle from "@material-ui/icons/AccountCircle";
 import MailIcon from "@material-ui/icons/Mail";
 
 import AppsIcon from "@material-ui/icons/Apps";
+import PollIcon from "@material-ui/icons/Poll";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import MoreIcon from "@material-ui/icons/MoreVert";
 import { Link } from "react-router-dom";
@@ -229,7 +230,15 @@ class Header extends React.Component {
                     className={classes.avatar}
                   />
 
-                  <Link to="/" className={classes.link}>
+                  <Link to="/dashboard" className={classes.link}>
+                    <Tooltip title="Apps">
+                      <IconButton color="inherit">
+                        <PollIcon />
+                      </IconButton>
+                    </Tooltip>
+                  </Link>
+
+                  <Link to="/agency/agencies" className={classes.link}>
                     <Tooltip title="Apps">
                       <IconButton color="inherit">
                         <AppsIcon />
