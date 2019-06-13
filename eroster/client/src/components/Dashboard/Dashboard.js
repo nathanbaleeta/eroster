@@ -6,14 +6,23 @@ import Header from "../Layout/Header";
 
 import Analytics from "./Visualization/Analytics";
 
-const styles = {};
+const styles = theme => ({
+  main: {
+    padding: 3 * theme.spacing.unit,
+    [theme.breakpoints.down("xs")]: {
+      padding: 2 * theme.spacing.unit
+    }
+  }
+});
 
 function Dashboard(props) {
-  //const { classes } = props;
+  const { classes } = props;
   return (
     <div>
       <Header />
-      <Analytics />
+      <main className={classes.main}>
+        <Analytics />
+      </main>
     </div>
   );
 }

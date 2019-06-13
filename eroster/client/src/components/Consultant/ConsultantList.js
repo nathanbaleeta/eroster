@@ -26,7 +26,7 @@ function ConsultantList(props) {
   return (
     <div className={classes.root}>
       <Typography variant="h5" component="h3" color="default" align="center">
-        Agencies
+        Consultants
       </Typography>
       <br />
       <Grid container spacing={24}>
